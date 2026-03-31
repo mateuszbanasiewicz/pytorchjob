@@ -3,9 +3,9 @@ FROM registry.redhat.io/rhoai/odh-training-cuda128-torch28-py312-rhel9:v3.0
 WORKDIR /workspace
 
 # Zależności systemowe
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    wget curl git \
-    && rm -rf /var/lib/apt/lists/*
+RUN yum install -y wget curl git \
+    && yum clean all \
+    && rm -rf /var/cache/yum
 
 # Zależności Pythona
 COPY requirements.txt .
