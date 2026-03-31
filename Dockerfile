@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:2.2.0-cuda12.1-cudnn8-runtime
+FROM registry.redhat.io/rhoai/odh-training-cuda128-torch28-py312-rhel9:v3.0
 
 WORKDIR /workspace
 
