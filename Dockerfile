@@ -2,15 +2,6 @@ FROM registry.redhat.io/rhoai/odh-training-cuda128-torch28-py312-rhel9:v3.0
 
 WORKDIR /workspace
 
-USER root
-
-# Zależności systemowe
-RUN yum install -y wget curl git \
-    && yum clean all \
-    && rm -rf /var/cache/yum
-
-USER 1000
-
 # Zależności Pythona
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
