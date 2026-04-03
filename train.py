@@ -1,6 +1,5 @@
 """
 Prosty przykład treningowy: klasyfikacja cyfr MNIST
-Działa standalone oraz jako PyTorchJob na OpenShift AI.
 """
 
 import os
