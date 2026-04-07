@@ -1,5 +1,5 @@
 """
-Prosty przykład treningowy: klasyfikacja cyfr MNIST - 
+Prosty przykład treningowy
 """
 
 import os
